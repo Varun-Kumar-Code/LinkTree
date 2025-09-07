@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="src\img\Varun Kumar R.png">
+    <title>My Links | Connect With Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .link-card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-img {
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center text-white font-sans">
+    <!-- Video Background -->
+    <video autoplay muted loop class="video-background">
+        <source src="https://cdn.pixabay.com/video/2021/04/12/70796-538877060_large.mp4"
+            type="video/mp4">
+    </video>
+
+    <!-- Content Container -->
+    <div class="w-full max-w-md mx-auto px-4 py-8 text-center">
+        <!-- Profile Section -->
+        <div class="mb-8">
+            <img src="src\img\Varun Kumar R.jpg" alt="Profile"
+                class="profile-img w-24 h-24 rounded-full mx-auto mb-4 shadow-lg">
+            <h1 class="text-3xl font-bold mb-2">Varun Kumar R</h1>
+            <p class="text-gray-200">Tech enthusiast | UI/UX, Python, Java & web dev | Building seamless digital
+                experiences & shaping the future with innovation 🚀</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="space-y-4">
+            <a href="https://varun-kumar.is-a.dev" class="link-card block p-4 rounded-xl shadow-lg flex items-center">
+                <i data-feather="briefcase" class="mr-3"></i>
+                <span>Portfolio Website</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/varun-kumar-in/" class="link-card block p-4 rounded-xl shadow-lg flex items-center">
+                <i data-feather="linkedin" class="mr-3"></i>
+                <span>LinkedIn Profile</span>
+            </a>
+
+            <a href="https://github.com/Varun-Kumar-Code" class="link-card block p-4 rounded-xl shadow-lg flex items-center">
+                <i data-feather="github" class="mr-3"></i>
+                <span>GitHub Projects</span>
+            </a>
+
+            <a href="https://www.behance.net/varun-kumar-r" class="link-card block p-4 rounded-xl shadow-lg flex items-center">
+                <i data-feather="image" class="mr-3"></i>
+                <span>Behance Portfolio</span>
+            </a>
+
+            <a href="enquiretovarun@gmail.com" class="link-card block p-4 rounded-xl shadow-lg flex items-center">
+                <i data-feather="mail" class="mr-3"></i>
+                <span>Contact Me</span>
+            </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center space-x-4 mt-8">
+            <a href="https://x.com/VarunKOfficial" class="p-2 rounded-full bg-white bg-opacity-10 hover:bg-opacity-20 transition">
+                <i data-feather="twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/itz_varun_official/" class="p-2 rounded-full bg-white bg-opacity-10 hover:bg-opacity-20 transition">
+                <i data-feather="instagram"></i>
+            </a>
+            <a href="#" class="p-2 rounded-full bg-white bg-opacity-10 hover:bg-opacity-20 transition">
+                <i data-feather="youtube"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+
+        // Fallback if video doesn't load
+        document.querySelector('.video-background').addEventListener('error', function () {
+            this.style.display = 'none';
+            document.body.style.background = 'linear-gradient(135deg, #1e5799 0%,#207cca 51%,#2989d8 100%)';
+        });
+    </script>
+</body>
+
+
+</html>
