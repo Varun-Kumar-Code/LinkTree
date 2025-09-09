@@ -26,10 +26,8 @@ If you are interested in using or modifying this project:
 
 ---
 
-## 🖼️ Preview  
-![Preview Screenshot](./src/img/Landscape.png)
-<img src="./src/img/Landscape.png" alt="Preview Screenshot" width="400" height="200">
-
+## 🖼️ Preview
+<img src="./src/img/Landscape.png" alt="Preview Screenshot" width="800" height="600">
 
 ---
 
