@@ -27,7 +27,7 @@ If you are interested in using or modifying this project:
 ---
 
 ## 🖼️ Preview  
-![Preview Screenshot](./preview.png)  
+![Preview Screenshot](.src/img/Lanscape.png)  
 
 ---
 
